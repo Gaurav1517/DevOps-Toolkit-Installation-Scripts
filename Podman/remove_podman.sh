@@ -26,10 +26,12 @@ else
     echo "Podman is not installed or could not be removed."
 fi
 
-# Step 4: Remove Podman configuration and data
-echo "Removing Podman configuration and data..."
+# Step 4: Remove Podman configuration, data, and binaries
+echo "Removing Podman configuration, data, and binaries..."
 rm -rf ~/.config/containers ~/.local/share/containers /etc/containers /var/lib/containers
-echo "Podman configuration and data have been removed."
+rm -rf /usr/libexec/podman/
+rm -f /usr/bin/podman
+echo "Podman configuration, data, and binaries have been removed."
 
 # Step 5: Verify Podman is uninstalled
 echo "Verifying if Podman is completely uninstalled..."
@@ -40,3 +42,4 @@ else
 fi
 
 echo "Script completed."
+
