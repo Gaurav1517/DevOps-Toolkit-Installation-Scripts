@@ -25,3 +25,10 @@ systemctl status docker.service
 docker --version
 # Verify that the installation is successful by running the hello-world image:
 sudo docker run hello-world
+
+# Install the Docker Compose plugin
+# For RPM-based distributions, run:
+sudo yum update
+sudo yum install docker-compose-plugin
+# Check dockeer-compose version 
+docker compose version
