@@ -1,4 +1,6 @@
 #########INSTALL DOCKER IN RHEL 9 ########### 
+# Update the system 
+dnf update -y
 # Before install you must uninstall these packages before you install the official version of Docker Engine. 
 sudo dnf remove docker \
                   docker-client \
