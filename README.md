@@ -44,7 +44,8 @@ DevOps-Toolkit: Essential Installation Scripts
 <a href="https://darumatic.com/media/blog_pics/2020_07/podman.png">
   <img src="https://darumatic.com/media/blog_pics/2020_07/podman.png" alt="Podman" width="100">
 </a>
-<a href="https://images.seeklogo.com/logo-png/43/1/gitlab-logo-png_seeklogo-436719.png?v=1957100944694325728">
-  <img src="https://images.seeklogo.com/logo-png/43/1/gitlab-logo-png_seeklogo-436719.png?v=1957100944694325728" alt="GitLab" width="100">
+<a href="https://i0.wp.com/leeno.org/wp-content/uploads/2018/06/GitLab_Logo.svg_.png?fit=960%2C887&ssl=1">
+  <img src="https://i0.wp.com/leeno.org/wp-content/uploads/2018/06/GitLab_Logo.svg_.png?fit=960%2C887&ssl=1" alt="GitLab" width="100">
 </a>
+
 
