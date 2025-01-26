@@ -32,6 +32,9 @@ DevOps-Toolkit: Essential Installation Scripts
 <a href="https://neilkillen.com/wp-content/uploads/2020/03/docker-compose.png">
   <img src="https://neilkillen.com/wp-content/uploads/2020/03/docker-compose.png" alt="Docker Compose" width="100">
 </a>
+<a href="https://docker.p2hp.com/wp-content/uploads/2023/10/home-hero-scout.png">
+  <img src="https://docker.p2hp.com/wp-content/uploads/2023/10/home-hero-scout.png" alt="Docker Scout" width="100">
+</a>
 <a href="https://www.ansible.com">
   <img src="https://www.svgrepo.com/show/353399/ansible.svg" alt="Ansible" width="100">
 </a>
@@ -46,6 +49,9 @@ DevOps-Toolkit: Essential Installation Scripts
 </a>
 <a href="https://i0.wp.com/leeno.org/wp-content/uploads/2018/06/GitLab_Logo.svg_.png?fit=960%2C887&ssl=1">
   <img src="https://i0.wp.com/leeno.org/wp-content/uploads/2018/06/GitLab_Logo.svg_.png?fit=960%2C887&ssl=1" alt="GitLab" width="100">
+</a>
+<a href="https://cdn.freelogovectors.net/wp-content/uploads/2021/07/owasp_logo-freelogovectors.net_.png">
+  <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/07/owasp_logo-freelogovectors.net_.png" alt="OWASP" width="100">
 </a>
 
 
