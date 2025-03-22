@@ -24,6 +24,6 @@ terraform --version
 terraform -help
 
 # Enable tab completion
-$ touch ~/.bashrc
+touch ~/.bashrc
 #Then install the autocomplete package.
-$ terraform -install-autocomplete
+terraform -install-autocomplete
