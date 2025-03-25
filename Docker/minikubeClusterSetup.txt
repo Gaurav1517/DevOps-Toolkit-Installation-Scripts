@@ -1,0 +1,106 @@
+######### ☸️ Minikube Cluster Setup ############
+# Docker, Minikube, and kubectl Installation Guide on CentOS
+
+# This document outlines the step-by-step procedure for installing Docker, Minikube,
+  and kubectl on a CentOS system. Follow the instructions below to 
+  successfully install and configure these tools.
+  
+# 1. Update CentOS System 🐧
+sudo dnf update -y
+
+#2. Install Docker 🐋
+# Install Required Dependencies:
+    sudo dnf -y install dnf-plugins-core
+
+# Add Docker Repository: 🗃️
+    sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+# Install Docker Packages:📦
+    sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+
+# Start Docker and enable it to run at system boot.
+    sudo systemctl enable --now docker
+    sudo systemctl start --now docker
+
+# Check Docker Status:
+    sudo systemctl status docker
+
+# Test Docker Installation:
+# Run the hello-world container to verify Docker is working.
+    sudo docker run hello-world
+
+# Check Docker Images:
+# List Docker images available on your system.
+    docker images
+
+# 3. Check System Architecture
+# Before proceeding with Minikube installation, check your system architecture to ensure compatibility.
+    uname -m
+#or
+    arch
+    # For x86_64 (64-bit Intel/AMD architecture), it should return x86_64.
+    # For ARM64 architecture, it should return aarch64.
+
+# 4. Install Minikube
+# Download the latest Minikube release using curl.
+    curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
+
+# Install Minikube:☸️
+# Copy the Minikube binary to the /usr/local/bin/ directory to make it executable globally.
+    sudo mkdir -p /usr/local/bin/
+    sudo install minikube /usr/local/bin/
+
+# Add User to Docker Group:
+# To allow Minikube to interact with Docker, add your user to the Docker group:
+    sudo usermod -aG docker $USER
+    newgrp docker
+
+# 5. Start Minikube
+# Run Minikube using the Docker driver. If you're using a different
+  driver (like VirtualBox or KVM), replace docker with the driver of your choice.
+    minikube start --vm-driver=docker
+
+    #Note: You may encounter errors with root permissions when using Docker; consider running as a non-root user (as Minikube recommends).
+
+# 6. Check Minikube Status
+# Once Minikube starts successfully, check the status of your Minikube cluster:
+    minikube status
+
+# 7. Install kubectl  🛠️
+# Use curl to download the latest version of kubectl.
+    curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+#Install kubectl:
+#Move kubectl to /usr/local/bin/ to make it globally executable:
+    sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
+# Alternative installation without root (if you don't have root access):
+# Make kubectl executable:
+    chmod +x kubectl
+
+# Create a directory for local binaries:
+    mkdir -p ~/.local/bin
+
+# Move kubectl to this directory:
+    mv ./kubectl ~/.local/bin/kubectl
+
+# Add ~/.local/bin to your $PATH by editing the .bashrc or .bash_profile file:
+    echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.bashrc
+    source ~/.bashrc
+
+# 8. Verify kubectl Installation
+    kubectl version --client
+
+# For detailed version information:
+    kubectl version --client --output=yaml
+
+# 9. Verify Kubernetes Cluster
+# To check the status of your Kubernetes nodes, run:
+    kubectl get nodes
+
+This command should show the nodes in your Minikube cluster, with the STATUS of Ready. 🚀
+
+Ref:
+![Minikube](https://k8s-docs.netlify.app/en/docs/tasks/tools/install-minikube/)
+![Docker](https://docs.docker.com/engine/install/centos/)
+![kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
