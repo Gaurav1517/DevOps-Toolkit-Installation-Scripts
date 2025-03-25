@@ -41,8 +41,14 @@ DevOps-Toolkit: Essential Installation Scripts
 <a href="https://kubernetes.io">
   <img src="https://www.svgrepo.com/show/376331/kubernetes.svg" alt="Kubernetes" width="100">
 </a>
+<a href="https://minikube.sigs.k8s.io/">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*KzqL3xqmXzV5PPjX.png" alt="Minikube" width="100">
+</a>
 <a href="https://www.svgrepo.com/show/373924/nginx.svg">
   <img src="https://www.svgrepo.com/show/373924/nginx.svg" alt="NGINX" width="100">
+</a>
+<a href="https://www.apache.org/">
+  <img src="https://pluspng.com/img-png/apache-logo-png-apache-logo-asf-apache-software-foundation-http-server-apache-860x265.png" alt="Apache" width="100">
 </a>
 <a href="https://darumatic.com/media/blog_pics/2020_07/podman.png">
   <img src="https://darumatic.com/media/blog_pics/2020_07/podman.png" alt="Podman" width="100">
