@@ -1,0 +1,13 @@
+#### To install jdk 17 in Windows
+Ref: https://www.oracle.com/java/technologies/javase/jdk17-0-13-later-archive-downloads.html
+
+Windows x64 Installer	153.99 MB  jdk-17.0.14_windows-x64_bin.exe
+
+Install and set environment variable
+Edit System environment variable 
+Environment Variable > System variables > Path(Double click) > New
+C:\Program Files\Java\jdk-17\bin	
+
+validate cmd
+java --version
+javac --version
