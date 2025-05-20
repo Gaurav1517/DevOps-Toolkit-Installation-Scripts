@@ -1,8 +1,16 @@
 # 🖥️ Installing Minikube on Windows
 
-Follow these steps to install and set up Minikube on a Windows machine using PowerShell with Administrator privileges.
+## Prerequisites
+
+Before installing Minikube, ensure the following dependencies are installed on your Windows system:
+
+* **Docker Desktop**
+  Minikube requires a container runtime to run Kubernetes locally. On Windows, Docker Desktop is the recommended runtime.
+  ➤ [Download Docker Desktop](https://docs.docker.com/desktop/setup/install/windows-install/)
 
 ---
+
+Follow these steps to install and set up Minikube on a Windows machine using PowerShell with Administrator privileges.
 
 ## ✅ Step 1: Download Minikube
 
