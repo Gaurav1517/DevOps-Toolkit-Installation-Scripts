@@ -59,5 +59,12 @@ DevOps-Toolkit: Essential Installation Scripts
 <a href="https://cdn.freelogovectors.net/wp-content/uploads/2021/07/owasp_logo-freelogovectors.net_.png">
   <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/07/owasp_logo-freelogovectors.net_.png" alt="OWASP" width="100">
 </a>
+<a href="https://prometheus.io/">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Prometheus_software_logo.svg" alt="Prometheus" width="100">
+</a>
+<a href="https://grafana.com/">
+  <img src="https://icon.icepanel.io/Technology/svg/Grafana.svg" alt="Grafana" width="100">
+</a>
+
 
 
