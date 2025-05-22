@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Installing prometheus in Amazon Linux
 set -e
 
 VERSION="2.52.0"
