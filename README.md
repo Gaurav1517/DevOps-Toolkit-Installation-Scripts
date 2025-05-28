@@ -14,6 +14,12 @@ DevOps-Toolkit: Essential Installation Scripts
 <a href="https://github.com">
   <img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="GitHub" width="100">
 </a>
+<a href="https://github.com/features/actions" target="_blank">
+    <img src="https://www.svgrepo.com/show/306098/githubactions.svg" alt="GitHub Actions" width="100">
+</a>
+ <a href="https://nodejs.org/en/docs/" target="_blank">
+    <img src="https://www.svgrepo.com/show/303360/nodejs-logo.svg" alt="Node.js" width="100">
+</a>
 <a href="https://www.jenkins.io">
   <img src="https://get.jenkins.io/art/jenkins-logo/logo.svg" alt="Jenkins" width="100">
 </a>
