@@ -56,8 +56,8 @@ sudo systemctl start docker.sonar.service
 To allow access to  SonarQube (port `9000`) through the **firewalld** firewall, run the following commands:
 
 ```bash
-# Open Nexus port
-sudo firewall-cmd --permanent --add-port=8081/tcp
+# Open SonarQube port
+sudo firewall-cmd --permanent --add-port=9000/tcp
 
 # Reload firewall to apply changes
 sudo firewall-cmd --reload
