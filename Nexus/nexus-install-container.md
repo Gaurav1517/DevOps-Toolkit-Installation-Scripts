@@ -56,7 +56,28 @@ sudo systemctl daemon-reload
 sudo systemctl enable docker.nexus.service
 sudo systemctl start docker.nexus.service
 ```
+---
 
+## ✅ Open Required Ports in `firewalld`
+To allow access to Nexus (port `8081`)  through the **firewalld** firewall, run the following commands:
+
+```bash
+# Open Nexus port
+sudo firewall-cmd --permanent --add-port=8081/tcp
+
+# Reload firewall to apply changes
+sudo firewall-cmd --reload
+```
+
+---
+
+## ✅ Verify Open Ports
+
+You can confirm that the ports are open using:
+
+```bash
+sudo firewall-cmd --list-ports
+```
 ---
 
 ## ✅ Step 5: Access Nexus
