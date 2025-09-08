@@ -70,6 +70,13 @@ sudo systemctl start node_exporter
 sudo systemctl status node_exporter
 ```
 
+## 8. Allow Port 9100 in Firewall (if using firewalld)
+
+```bash
+sudo firewall-cmd --add-port=9100/tcp --permanent
+sudo firewall-cmd --reload
+```
+
 Or check the endpoint in your browser or curl:
 
 ```bash
@@ -78,7 +85,7 @@ curl http://localhost:9100/metrics
 
 ---
 
-##  8. Add to `prometheus.yml` (optional)
+##  9. Add to `prometheus.yml` (optional)
 
 To scrape Node Exporter metrics from Prometheus, add this to your `prometheus.yml`:
 ```bash
