@@ -2,11 +2,11 @@
 
 set -e  # Exit on any error
 
-echo "📥 Downloading Grafana GPG key..."
+echo " Downloading Grafana GPG key..."
 wget -q -O gpg.key https://rpm.grafana.com/gpg.key
 sudo rpm --import gpg.key
 
-echo "📝 Creating Grafana repo file..."
+echo " Creating Grafana repo file..."
 cat <<EOF | sudo tee /etc/yum.repos.d/grafana.repo
 [grafana]
 name=grafana
@@ -19,11 +19,13 @@ sslverify=1
 sslcacert=/etc/pki/tls/certs/ca-bundle.crt
 EOF
 
-echo "📦 Installing Grafana..."
+echo " Installing Grafana..."
 sudo dnf install -y grafana
 
-echo "🚀 Enabling and starting Grafana service..."
-sudo systemctl enable --now grafana.service
+echo " Enabling and starting Grafana service..."
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl enable --now grafana-server.service
 
-echo "✅ Grafana installed and running. Access it via http://<your-server-ip>:3000"
+echo " Grafana installed and running. Access it via http://<your-server-ip>:3000"
 # NOTE: Default user admin pass admin
