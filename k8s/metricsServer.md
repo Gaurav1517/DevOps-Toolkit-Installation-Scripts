@@ -120,10 +120,13 @@ nginx-pod        2m           15Mi
 ```bash
 kubectl scale deployment metrics-server -n kube-system --replicas=1
 ```
-
 ### Check logs if issues:
 
 ```bash
 kubectl logs -n kube-system -l k8s-app=metrics-server
 ```
 ---
+##  References
+
+- [Official Metrics Server Installation Guide](https://github.com/kubernetes-sigs/metrics-server)
+- [Direct Installation Manifest](https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml)
