@@ -77,6 +77,10 @@ You can customize the message to include other variables or change the text. Her
 ```bash
 echo. Welcome, %USERNAME%! The time is %TIME%.
 ````
+OR
+```bash
+echo. 🎉 Welcome to your computer, ❤️ Gaurav!
+```
 
 * To display system information:
 
