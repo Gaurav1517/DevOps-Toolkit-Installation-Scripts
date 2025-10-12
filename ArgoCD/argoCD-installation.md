@@ -48,7 +48,7 @@ helm version
 
 ## Important
 
-You can either follow the below manual steps or directly run the script `setup_argocd.sh`.
+You can either follow the below manual steps or directly run the script [setup_argocd.sh](setup_argocd.sh).
 
 The script will create a Kind cluster and install ArgoCD (UI and CLI) using either **Helm** or **Manifests**.
 
