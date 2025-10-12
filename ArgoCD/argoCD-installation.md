@@ -127,6 +127,10 @@ Port-forward the service:
 ```bash
 kubectl port-forward svc/argocd-server -n argocd 8080:443 --address=0.0.0.0 &
 ```
+OR
+```bash
+kubectl -n argocd port-forward svc/argocd-server 8080:443 --address=0.0.0.0 > /dev/null 2>&1 &
+```
 
 Now, open the browser:
 
@@ -145,6 +149,13 @@ Login using:
 
 * **Username**: `admin`
 * **Password**: (Output from above)
+
+7. To Stop the Port Forward
+  You can stop it using:
+  ```bash
+  ps aux | grep port-forward
+  kill <PID>
+  ```   
 
 ### Method 2: Install ArgoCD using Official Manifests (Fastest for Demos)
 
